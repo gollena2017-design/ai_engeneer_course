@@ -76,7 +76,7 @@ def main():
     while True:
         try:
             query = input("\nЩо ви хочете знайти у коді? (або 'exit' для виходу): ").strip()
-        except KeyboardInterrupt:
+        except (KeyboardInterrupt, EOFError):
             print("\nВихід...")
             break
 
